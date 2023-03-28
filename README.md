@@ -1,5 +1,6 @@
 # binoculars 
-<p>can scan network subnet using ping in multi-threading mode, and can also find devices with unknown ip addresses (tested on ip cameras Axis, Verint, iptronic, Arecont, etc.)</p>
-<p>When scanning a subnet, you can also find out information about the MAC address and vendor of the device.</p>
-<p>To search for a device with an unknown ip, you must connect it directly to the network port of your PC, and Wireshark must be installed on the PC.</p>
-<p>The program was written very quickly, because I needed this functionality very urgently, so I only managed to test it on Windows 7 and Archlinux.</p>
+<p>Умеет сканировать подсеть при помощи многопоточного ping и сниффить ip адрес устройств, адрес которых неизвестен</p>
+<p>Поскольку ping осуществляется одновременно в нескольких потоках, такое сканирование занимает всего несколько секунд для всей подсети (255 адресов). Также в этом режиме возможно определение мак-адресов и производителей устройств, если сканируется сеть, в которой находитесь вы сами.</p>
+<p>Программа умеет сниффить ip-адрес для устройств, у которых он заранее неизвестен. При этом адрес сетевой карты вашего ПК значения не имеет. Это особенно актуально для ip-камер различных китайских брендов, но тестировалось в том числе и на известных моделях (Axis, Verint, iptronic, Arecont и др.)</p>
+<p>Для использования этого режиме у вас должен быть установлен Wireshark. Устройство, адрес которого требуется определить, должно быть подключено напрямую в сетевой порт ПК!</p>
+<p>Программа имеет только русскоязычный интерфейс и написана на колене, потому что её функционал требовался очень срочно. Я успел протестировать её только на Windows 7x64 и Archlinux.</p>
